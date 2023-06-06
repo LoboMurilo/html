@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Abra esse site em tamanhos de telas diferentes!</p>
+     
+    <picture> 
+        <!-- <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível"> -->
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="foto flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a repoduzir áudios</p>
+    <audio src="midia/y2meta.com - HITMAKER, Lexa - Bota O Colete (128 kbps).mp3" 
+    autoplay controls></audio>
+    <audio src="midia/Happy Mistake - RKVC.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG -->
+
+    <hr>
+    <!-- outra fora , para tentar carregar outros arquivos caso o primeiro não funcione -->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <!-- <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> -->
+        <!-- os 2 últimos arquivos são apenas exemplos -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.
+            <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a>
+        </p>
+    </audio>
+
+
+
+</body>
+</html>
